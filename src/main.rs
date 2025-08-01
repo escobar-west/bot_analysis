@@ -86,7 +86,7 @@ fn get_subscribe_request(
             "client".to_string(),
             SubscribeRequestFilterTransactions {
                 vote: Some(false),
-                failed: Some(false),
+                failed: Some(true),
                 signature: None,
                 account_include: args.accounts.clone(),
                 account_exclude: vec![],

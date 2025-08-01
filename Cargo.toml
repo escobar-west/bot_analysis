@@ -1,0 +1,28 @@
+[package]
+name = "bot_analysis"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "*"
+backoff = { version = "*", features = ["tokio"] }
+bincode = "*"
+bs58 = "*"
+chrono = "*"
+clap = { version = "*", features = ["derive"] }
+env_logger = "*"
+futures = "*"
+hex = "*"
+indicatif = "*"
+log = "*"
+maplit = "*"
+serde_json = "*"
+solana-hash = "*"
+solana-pubkey = "*"
+solana-signature = "*"
+solana-transaction-status = "*"
+tokio = { version = "*", features = ["rt-multi-thread", "fs"] }
+sqlx = { version = "0.8", features = ["runtime-tokio", "tls-native-tls", "postgres", "macros"] }
+tonic = { version = "0.12"}
+yellowstone-grpc-client = "*"
+yellowstone-grpc-proto = { version = "*", features = ["plugin"] }
